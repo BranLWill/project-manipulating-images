@@ -17,7 +17,7 @@ for filename in os.listdir('.'):
   im = Image.open(filename)
   width, height = im.size
   
-if width > SQUARE_FIT_SIZE and height > SQUARE_FIT_SIZE:
+  if width > SQUARE_FIT_SIZE and height > SQUARE_FIT_SIZE:
     if width > height:
       height = int((SQUARE_FIT_SIZE / width) * height)
       width = SQUARE_FIT_SIZE
